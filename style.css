@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@400;500;600&family=Numans&family=Open+Sans:wght@400;600&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap');
+
+/* Reset default style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Global variables */
+:root{
+    --text-color: #05253C;
+    --font: 'Manrope';
+    --company-color: #FFDC47;
+    --border-color: #EBEBEB;
+    --placeholder-color: #DBDBDB;
+    --error-color: #FF0000;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1366px;
+    height: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side{
+    width: 783px;
+    height: 100%;
+    padding-left: 139px;
+    padding-top: 81px;
+}
+
+.left-side .form-heading{
+    padding-top: 31px;
+}
+
+.form-heading p{
+    font-weight: normal;
+    width: 100%;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.inputAll{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 444px;
+}
+
+.inputAll input{
+    width: 444px;
+    height: 20px;
+    margin-top:15px;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 12px;
+}
+
+.inputAll input:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.right-side{
+    width: 583px;
+    height: 100%;
+}
+
+
+
+.form button{
+    width: 168px;
+    height: 45px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--company-color);
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    transition: all .5s ease;
+}
+
+.inputAll label{
+    font-size: 1rem;
+    color: var(--text-color);
+    padding-top: 30px;
+   
+}
+
+.inputAll input::placeholder{
+    color: var(--placeholder-color);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.right-image{
+    width: 100%;
+    height: 100%;
+}
+
+button:hover{
+    background-color: var(--text-color);
+    color: var(--company-color);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+span{
+    color: var(--error-color);
+    position: absolute;
+    right: 10px;
+    bottom: -25px;
+}
+
+@media(max-width: 1024px){
+    .left-side{
+        width: 100%;
+    }
+
+    .right-side{
+        display: none;
+    }
+
+    .left-side{
+       padding-left: 20px;
+    }   
+
+    .inputAll{
+        width: 100%;
+    }
+
+    .form-heading p{
+        font-size: 20px;
+        margin-bottom: 0px;
+    } 
+
+    .inputAll input{
+        width: 100%;
+    }
+
+    .form{
+        max-width: 100vw;
+    }
+
+    span{
+        font-size: 0.8rem;
+    }
+}
