@@ -78,7 +78,7 @@ body{
 
 
 
-.form button{
+.form #submit{
     width: 168px;
     height: 45px;
     font-size: 1rem;
@@ -108,7 +108,7 @@ body{
     height: 100%;
 }
 
-button:hover{
+#submit:hover{
     background-color: var(--text-color);
     color: var(--company-color);
     cursor: pointer;
@@ -121,6 +121,7 @@ span{
     position: absolute;
     right: 10px;
     bottom: -25px;
+    visibility: hidden;
 }
 
 @media(max-width: 1024px){
